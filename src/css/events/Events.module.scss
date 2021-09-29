@@ -1,0 +1,151 @@
+@import "../../theme/variables.scss";
+.Card {
+  border-radius: 1em;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.Card > div {
+  padding-top: 2px !important;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 2px !important;
+}
+
+.CardTitle {
+  font-size: 16px;
+  color: var(--color-event-title);
+  margin-bottom: 10px;
+}
+
+.CardTitle a {
+  color: var(--color-event-title);
+}
+
+.FilterBar {
+  border-radius: 2em;
+  border-color: none;
+  margin-bottom: 20px !important;
+}
+
+.FilterBarCollapsibleItem > div {
+  border-radius: 2em;
+  border-color: none;
+}
+
+.EventsContainer {
+  margin-right: auto;
+  margin-left: 0px;
+  padding: 0;
+}
+
+.EventsSearchButtonContainer {
+  display: block;
+}
+
+.EventsSearchButton {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+  width: 100%;
+}
+
+.EventsSearchButton button {
+  margin-top: 15px;
+}
+
+.EventsButton {
+  display: flex;
+}
+
+.EventsButton button {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.HML {
+  color: "#F77952";
+}
+
+.Tab {
+  padding: 0 !important;
+}
+
+.Tabs {
+  // border-radius: 1em;
+  box-shadow: 1px -1px 5px 1px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 1px -1px 5px 1px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 1px -1px 5px 1px rgba(0, 0, 0, 0.35);
+
+  margin-bottom: 10px !important;
+}
+
+.Tabs a {
+  font-family: "Futura-Bold", sans-serif;
+  font-size: 12px !important;
+}
+
+.LoadingContent {
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.CalendarCursor {
+  cursor: pointer;
+}
+
+// Extremely small devices
+@media (max-width: 335px) {
+  .Tabs a {
+    font-size: 11px !important;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 992px) {
+  .EventsContainer {
+    margin-left: 30px;
+    margin-right: auto;
+    width: 90%;
+  }
+  .AppContainer {
+    width: 100%;
+  }
+  .Tabs {
+    align-items: space-between !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .Tabs li {
+    width: 50%;
+  }
+  .EventsSearchButton {
+    width: 50%;
+  }
+
+  .Card:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .EventsSearchButton {
+    width: 50%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .EventsSearchButton {
+    width: 50%;
+  }
+}

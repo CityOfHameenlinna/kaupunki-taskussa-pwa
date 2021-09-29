@@ -1,0 +1,11 @@
+{
+    "library": {
+        "url": "API_URL",
+        "username": "&USER_PARAM=",
+        "password": "&PASSWORD_PARAM="
+    },
+    "basic_auth": {
+        "username": "USERNAME",
+        "password": "PASSWORD"
+    }
+}

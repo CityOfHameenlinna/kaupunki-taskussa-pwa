@@ -1,0 +1,120 @@
+@import "../theme/variables.scss";
+
+.navbar-color {
+  background-color: var(--color-navbar);
+  position: fixed;
+}
+.sidenav-container {
+  background-color: var(--color-sidenav-background);
+}
+.sidenav-container li .subheader {
+  color: var(--color-white);
+  opacity: 0.6;
+}
+.sidenav-container li a {
+  color: var(--color-navbar-text);
+}
+.sidenav-fixed {
+  background-color: var(--color-sidenav-background);
+}
+.sidenav-fixed li .subheader {
+  color: var(--color-white);
+  opacity: 0.6;
+}
+.sidenav-fixed li a {
+  color: var(--color-navbar-text);
+  font-family: "Futura", Arial;
+  font-size: 20px; // navbar font size testing
+  height: 40px; // navbar list item size testing
+}
+
+.sidenav li i {
+  margin: 0 0 0 0 !important;
+}
+
+.sidenav-top-image {
+  background-image: url(../img/hameenlinna-logo.png);
+  height: 28px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 15px;
+}
+
+// Sticky hamburger icon
+#sidenav-icon {
+  position: fixed;
+  overflow: hidden;
+  // background-color: rgba(114, 112, 112, 0.5);
+  font-size: 45px;
+  text-shadow: 3px 0px 7px rgba(10, 46, 89, 0.8),
+    -3px 0px 7px rgba(10, 46, 89, 0.8), 0px 4px 7px rgba(10, 46, 89, 0.8);
+  // border-radius: 999px;
+  left: 10px;
+  top: 2px;
+}
+
+// sidenav made taller to better fit ios statusbar
+#slide-out {
+  top: -60px;
+  padding-top: 60px;
+}
+
+.sidenav-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  top: -60px;
+  padding-top: 60px;
+}
+
+//top Navigationbar image container settings
+.nav-top-image-container {
+  padding: 15px;
+  width: 100%;
+  max-width: 260px;
+  height: 100%;
+  background-color: var(--color-navbar);
+  margin: auto;
+
+  //top Navigationbar image settings
+  a,
+  .nav-top-image {
+    background-image: url(../img/hameenlinna-logo.png);
+
+    margin: 0 auto;
+    height: 30px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.nav-main-container nav {
+  height: 60px;
+  // position: fixed; /* Set the navbar to fixed position */
+  // top: 0; /* Position the navbar at the top of the page */
+  // z-index: 1;
+}
+//Close Icon in side nav after logo
+.side-nav-closeicon {
+  float: right;
+}
+
+@media only screen and (min-width: 601px) {
+  nav,
+  nav .nav-wrapper i,
+  nav a.button-collapse,
+  nav a.button-collapse i {
+    height: 64px !important;
+    line-height: 64px !important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .side-nav-closeicon {
+    visibility: hidden;
+  }
+  .sidenav-top-image {
+    visibility: hidden;
+  }
+}

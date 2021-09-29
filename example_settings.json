@@ -1,0 +1,269 @@
+{
+  "settings": [
+    {
+      "originalName": "Taskuraati.js",
+      "nameForVariable": "Taskuraati",
+      "path": "/Taskuraati",
+      "module": "Taskuraati",
+      "name": "Taskuraati",
+      "navBarName": "Taskuraati",
+      "url": null,
+      "useIframe": false, 
+      "proxyURL": "https://PROXY_URL/", 
+      "surveyURL": "www.URL:443/SURVEY",
+      "key": 1
+    },
+    {
+      "originalName": "LipasAPI.js",
+      "nameForVariable": "Luonto",
+      "path": "/Ulkoilujaliikunta",
+      "module": "LipasAPI",
+      "name": "LipasAPI",
+      "navBarName": "Ulkoilu ja liikunta",
+      "url": null,
+      "useIframe": false,
+      "key": 13,
+      "useMapBox":true,
+      "mapBoxSettings":{
+        "accessToken": "ACCESS_TOKEN",
+        "styleURL": "MAPBOX_STYLE_URL",
+        "startLng":24.482,
+        "startLat":60.9967,
+        "startZoom":7.5
+      },
+      "settings": {
+        "cityCodes": [109],
+        "categories": {
+          "Ulkoilu ja retkeily": { 
+            "typeCodes": [103, 301], 
+            "icon": "hiking",
+            "mapPinIcon":"markerActivity" 
+          },
+          "Ulkoliikunta ja kentät": {
+            "typeCodes": [1110,1120,1130,1140,1150,1160,1170,1180,1310,1320,1330,1340,1350,1360,1370,1380],
+            "icon": "directions_run",
+            "mapPinIcon":"markerActivity"
+          },
+          "Luonto ja virkistys": {
+            "typeCodes": [101, 102, 104, 106, 107, 108, 109, 110, 111, 112],
+            "icon": "park",
+            "mapPinIcon":"markerFireplace"
+          },
+          "Uimarannat ja vesiliikunta": {
+            "typeCodes": [3110, 3120, 3130, 3210, 3220, 3230, 3240],
+            "icon": "pool",
+            "mapPinIcon":"markerSwimming"
+          }
+        }
+      },
+      "requestUrl": "https://PROXY_URL/lipas.cc.jyu.fi/api/sports-places",
+      "pageTitle": "Liikuntapaikat ja virkistyskohteet",
+      "dataExpireMinutes":1440,
+      "popUpDataNotAvailable":"Valitettavasti paikasta ei ole tietoa saatavilla."
+    },
+    {
+      "url": "MOBILE_TICKET_URL",
+      "navBarName": "Bussin mobiililippu",
+      "key": 2,
+      "market_links": {
+        "ios_link": "itms-apps://APP_STORE_URL",
+        "android_link": "market://details?id=APP_ID"
+      }
+    },
+    {
+      "url": "BUS_ROUTES_URL",
+      "navBarName": "Bussien reittiopas",
+      "key": 3
+    },
+    {
+      "key": 8,
+      "originalName": "Kirjastokortti_module.js",
+      "nameForVariable": "Kirjastokorttimodule",
+      "path": "/Kirjastokortti",
+      "module": "kirjastokorttimodule",
+      "name": "Kirjastokortti",
+      "navBarName": "Kirjastokortti",
+      "url": null,
+      "useIframe": false,
+      "proxyURL": "https://PROXY_URL/"
+    },
+    {
+      "key": 9,
+      "originalName": "LinkedEvents.js",
+      "nameForVariable": "LinkedEvents",
+      "path": "/LinkedEvents",
+      "module": "linkedevents",
+      "name": "LinkedEvents",
+      "navBarName": "Tapahtumat",
+      "url": null,
+      "useIframe": false,
+      "showEventsCount": "20",
+      "filters": {
+        "includeAddressLocality": true,
+        "includeFilterBar": true,
+        "includePostalCodeFilter": true,
+        "includeKeywordFilter": true,
+        "includeTextFilter": true,
+        "includeTimeFilter": true,
+        "locality": "Hämeenlinna"
+      },
+      "apiURL": "EVENTS_API_URL"
+    },
+
+    {
+      "key": 11,
+      "originalName": "RSSFeed.js",
+      "nameForVariable": "RSSFeed",
+      "path": "/RSSFeed",
+      "module": "rssfeed",
+      "name": "RSSFeed",
+      "navBarName": "Tiedotteet",
+      "url": null,
+      "useIframe": false,
+      "pageTitle": "Tiedotteet",
+      "showFeedsCount": 15,
+      "combineFeeds": true,
+      "feedUrls": [
+        {
+          "id": "url-1",
+          "name": "Tiedotteet",
+          "url": "FEED_URL",
+          "absoluteUrl": "FEED_URL",
+          "proxy": "https://PROXY_URL/"
+        },
+        {
+          "id": "url-2",
+          "name": "Häiriötiedotteet",
+          "url": "FEED_URL",
+          "absoluteUrl": "FEED_URL",
+          "proxy": "https://PROXY_URL/"
+        }
+      ],
+      "https://PROXY_URL/FEED_URL": {
+        "feedContentContainer": "description",
+        "isContentHtmlFormat": true,
+        "feedPublishedDateContainer": "published",
+        "feedTitleContainer": "title",
+        "linkDescription": "Lue lisää: ",
+        "linkContainer": "id",
+        "showLink": false,
+        "modifyContent": true,
+        "replaceWords": [
+          {
+            "replace": "The post",
+            "with": "Lue lisää: "
+          }
+        ],
+        "splitTextAfter": "",
+        "splitTextBefore": "appeared first on",
+        "splitTextAfterCount": 0,
+        "addEndTag": "</p>",
+        "showMoreLink": {
+          "href": "FEED_URL",
+          "name": "Kaikki tiedotteet",
+          "isShowing": true
+        },
+        "iconSettings": {
+          "showIcons": true,
+          "showOnlyOneIcon": true,
+          "iconTagContainerName": "categories",
+          "iconTagName": "name",
+          "iconDefinedTags": [
+            {
+              "tagName": "Tiedotteet",
+              "icon": "info_outline",
+              "color": "#007bff"
+            }
+          ],
+          "showDefaultIcon": true,
+          "iconDefault": "info_outline",
+          "iconColorDefault": "#007bff",
+          "iconSizePx": "24px",
+          "iconMargin": "0",
+          "iconDisplayType": "inline-table",
+          "iconPosition": "relative",
+          "iconTextAlign": "left",
+          "iconWidth": "auto"
+        }
+      },
+      "https://PROXY_URL/FEED_URL_2": {
+        "feedContentContainer": "description",
+        "isContentHtmlFormat": true,
+        "feedPublishedDateContainer": "published",
+        "feedTitleContainer": "title",
+        "linkDescription": "Lue lisää: ",
+        "linkContainer": "id",
+        "showLink": false,
+        "modifyContent": true,
+        "replaceWords": [
+          {
+            "replace": "The post",
+            "with": "Lue lisää: "
+          }
+        ],
+        "splitTextAfter": "",
+        "splitTextBefore": "appeared first on",
+        "splitTextAfterCount": 0,
+        "addEndTag": "</p>",
+        "showMoreLink": {
+          "href": "FEED_URL",
+          "name": "Kaikki tiedotteet",
+          "isShowing": true
+        },
+        "iconSettings": {
+          "showIcons": true,
+          "showOnlyOneIcon": true,
+          "iconTagContainerName": "categories",
+          "iconTagName": "name",
+          "iconDefinedTags": [
+            {
+              "tagName": "Häiriötiedotteet",
+              "icon": "warning",
+              "color": "#f77952"
+            }
+          ],
+          "showDefaultIcon": true,
+          "iconDefault": "warning",
+          "iconColorDefault": "#f77952",
+          "iconSizePx": "24px",
+          "iconMargin": "0",
+          "iconDisplayType": "inline-table",
+          "iconPosition": "relative",
+          "iconTextAlign": "left",
+          "iconWidth": "auto"
+        }
+      }
+    },
+    {
+      "url": "CONTACTS_URL",
+      "navBarName": "Kaupungin yhteystiedot",
+      "key": 6
+    },
+    {
+      "url": "URL",
+      "navBarName": "Sähköinen asiointi",
+      "key": 4
+    },
+    {
+      "url": "FEEDBACK_URL",
+      "navBarName": "Vikailmoitukset",
+      "key": 5
+    },
+    {
+      "key": 12,
+      "originalName": "Tietoa-sovelluksesta_module.js",
+      "nameForVariable": "Tietoasovelluksestamodule",
+      "path": "/Tietoasovelluksesta",
+      "module": "tietoa-sovelluksestamodule",
+      "name": "Tietoasovelluksesta",
+      "navBarName": "Tietoa sovelluksesta",
+      "url": null,
+      "useIframe": false
+    },
+    {
+      "url": "FORM_URL",
+      "navBarName": "Palautetta sovelluksesta",
+      "key": 7
+    }
+  ]
+}

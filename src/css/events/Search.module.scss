@@ -1,0 +1,58 @@
+@import "../../theme/variables.scss";
+
+.Keywords {
+  padding: 10px;
+}
+
+.Keywords label {
+  display: block;
+}
+
+.Locations {
+  padding: 10px;
+}
+
+.Locations label {
+  padding-right: 25px;
+  display: block;
+}
+
+.ImageContainer {
+  // width: 100px;
+  // height: 100px;
+  // position: relative;
+  // overflow: hidden;
+  // border-radius: 50%;
+  margin-right: 30px;
+}
+
+.ImageContainer img {
+  // display: inline;
+  // margin: 0 auto;
+  // height: 100%;
+  // width: auto;
+
+  // position: 'relative';
+  // width: 50;
+  // height: 50;
+  // margin-left: 10;
+  // margin-right: 10;
+  // border-radius: 50;
+  vertical-align: middle !important;
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 50% !important;
+}
+
+.Content {
+  display: flex;
+}
+
+.SubContent {
+  margin-bottom: 10px;
+}
+
+[type="checkbox"]:checked + span:not(.lever):before {
+  border-bottom-color: var(--color-event-search-checkbox);
+  border-right-color: var(--color-event-search-checkbox);
+}

@@ -1,0 +1,51 @@
+
+.IframeContent{
+    height: 92%;
+    width: 100%;
+    position: relative;
+    left: 0px;
+}
+.Forms {
+    width: 100%;
+    height: 100vh;
+}
+.LoadingContent {
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+ 
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+ 
+}
+
+/* Large devices (desktops, 993px and up) */
+@media (min-width: 993px) {
+  .IframeContent{
+    align-content: center;
+    justify-content: center;
+    height: auto;
+    margin: auto;
+    width: 80%;
+    /* left: 230px; */
+    position: relative;
+    display: flex;
+  }
+  .Forms {
+    width: 100%;
+    height: 100vh;
+}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  
+}

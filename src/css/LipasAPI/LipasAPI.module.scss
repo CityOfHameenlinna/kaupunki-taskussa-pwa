@@ -1,0 +1,321 @@
+/*! CSS Used fontfaces */
+@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialicons/v85/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');}
+@import "../../theme/variables.scss";
+.MainContent
+{
+  // padding: 10px;
+  width: auto;
+}
+/* width */
+.MainContent ::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.MainContent ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey; 
+  border-radius: 2px;
+}
+ 
+/* Handle */
+.MainContent ::-webkit-scrollbar-thumb {
+  background: #f77952; 
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+.MainContent ::-webkit-scrollbar-thumb:hover {
+  background: #f76032; 
+}
+
+
+
+.LoadingContent {
+  position: absolute;
+    top: 43%;
+    left: 43%;
+}
+.LoadingContentList {
+  position: absolute;
+    top: 43%;
+    left:40%;
+}
+.LoadingIcon{
+  border-color: #f77952 !important;
+}
+.mapContainer {
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  // height: 100vh;
+  height: var(--app-height, 100vh);
+  z-index: 0;
+  }
+.rowContainer{
+  z-index: 1;
+  position: relative;
+  display: none;
+  margin-top: 0px;
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  left:60px;
+  top:10px;
+  border-radius: 10px;
+  max-width: 240px;
+  max-height: 380px;
+  overflow: auto;
+}
+
+.placeListContainer {
+  display: contents;
+  justify-content: center;
+}
+.placeListContainer ul{
+  background-color: white;
+  border-radius: 10px;
+  margin: 20%;
+  padding: 25px;
+  /* top: -47px; */
+  left: auto;
+  right: auto;
+  bottom: 67px;
+  text-align: left;
+  position: absolute;
+  width: auto;
+  min-width: 250px;
+  /* max-width: max-content; */
+  // min-height: 350px;
+  max-height: 70vh;
+  overflow: auto;
+  -webkit-overflow-scrolling:touch;
+}
+.placeListContainer ul li{
+  color: #f77952;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+}
+.placeListContainer ul li:hover{
+  cursor: pointer;
+}
+.placeListContainer ul h5{
+  color: rgba(10, 46, 89, 1);
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.rowit{
+  margin: auto !important;
+  display: none;
+} 
+.colit{
+  padding: .30rem .30rem !important;
+}
+.button{
+  width: 70px;
+  height: 70px;
+  border-width:2px;
+  border-radius: 5%;
+  border-color: rgba(10, 46, 89, 1);
+  background-color: rgb(255, 255, 255);
+}
+.button:focus {
+  border-color: #f77952 !important;
+  background-color: rgb(255, 255, 255) !important;
+  transition: all 0.8s !important;
+}
+
+.button:focus:after {
+  padding: 0 !important;
+  margin: 0 !important;
+  opacity: 1 !important;
+  transition: 0s !important;
+}
+.button p{
+  padding: 0;
+  margin:0px;
+  font-size: 10px;
+} 
+.pinpoint {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  box-sizing:border-box;
+  width: 30px;
+  height: 30px;
+  color:#fff;
+  background: #4D2D73;
+  border:solid 2px;
+  border-radius: 0 70% 70%;
+  box-shadow:0 0 2px #000;
+  cursor: pointer;
+  transform-origin:0 0;
+  transform: rotateZ(-135deg);
+  background-image: url("../../img/hameenlinna-logo.png");
+}
+.mapPopUpContent{
+  margin-left:10px;
+  font-family: "Futura", sans-serif;
+  max-height: 350px;
+}
+.mapPopUpContent h6{
+  margin-left:0px;
+  font-size: 18px;
+}
+.mapPopUpContent p{
+  margin-left:0px;
+  min-width:  min-content;
+  max-width: max-content;
+  min-height: auto;
+  max-height: 200px;
+  overflow: auto;
+  -webkit-overflow-scrolling:touch;
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  font-size: 14px;
+}
+.mapPopUpContent a{
+  margin-left:0px;
+  font-size: 14px;
+}
+
+
+.Card {
+  border-radius: 1em;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 15px;
+}
+
+.Card > div {
+  padding-top: 2px !important;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 2px !important;
+}
+
+.CardTitle {
+  font-size: 16px;
+  color: var(--color-event-title);
+  margin-bottom: 10px;
+}
+
+.CardTitle a {
+  color: var(--color-event-title);
+}
+
+.FilterBar {
+  border-radius: 2em;
+  border-color: none;
+  margin-bottom: 20px !important;
+}
+
+.FilterBarCollapsibleItem > div {
+  border-radius: 2em;
+  border-color: none;
+}
+
+.HML {
+  color: "#F77952";
+}
+
+.Tab {
+  padding: 0 !important;
+}
+
+.Tabs {
+  // border-radius: 1em;
+  box-shadow: 1px -1px 5px 1px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 1px -1px 5px 1px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 1px -1px 5px 1px rgba(0, 0, 0, 0.35);
+
+  margin-bottom: 10px !important;
+}
+
+.Tabs a {
+  font-family: "Futura-Bold", sans-serif;
+  font-size: 12px !important;
+}
+
+.CalendarCursor {
+  cursor: pointer;
+}
+
+.ActivityButtons {
+  text-align: center;
+}
+
+.ActivityButtons a {
+  color: var(--color-button-link-color)
+}
+
+.ActivityColor {
+  color: var(--color-button-primary-color);
+}
+
+// Extremely small devices
+@media (max-width: 335px) {
+  .Tabs a {
+    font-size: 11px !important;
+    font-weight: bold;
+  }
+}
+@media(max-width:991px) {
+  .placeListContainer ul{
+    /* top: -47px; */
+    bottom: 5%;
+  }
+  .placeListContainer ul{
+    margin: 15%;
+    min-width: 250px;
+    bottom: 20px;
+    
+  }
+}
+@media (min-width: 992px) {
+  .AppContainer {
+    width: 100%;
+  }
+  .Tabs {
+    align-items: space-between !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .Tabs li {
+    width: 50%;
+  }
+
+  .Card:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  .mapContainer {
+    // left: 300px;
+    }
+    .placeListContainer ul{
+      
+    }
+    .fixed-action-btn {
+      right: 30% !important;
+  }
+  .LoadingContent{
+    left: 60%;
+  }
+  
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}

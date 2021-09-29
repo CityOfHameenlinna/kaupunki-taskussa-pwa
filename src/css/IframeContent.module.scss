@@ -1,0 +1,35 @@
+.Content {
+    border: 0;
+}
+.IframeContent{
+    height: 92%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+ 
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+  
+  }
+  
+  /* Large devices (desktops, 993px and up) */
+  @media (min-width: 993px) {
+    .IframeContent{
+        height: 95%;
+        width: 75%;
+        left: 300px;
+    }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    
+  }

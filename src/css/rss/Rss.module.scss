@@ -1,0 +1,163 @@
+@import "../../theme/variables.scss";
+
+.ShowAllButton {
+  display: flex;
+}
+.ShowAllButton button {
+  margin: 15px;
+}
+.Collapsible {
+  border: 0 !important;
+  box-shadow: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.Content p {
+  padding: 0;
+  margin: 0;
+}
+.Content h4 {
+  font-size: 16px;
+}
+.SubContent {
+  margin-bottom: 10px;
+  border-width: 0;
+}
+.SubContent h2 {
+  font-size: 18px;
+}
+.CollapsibleContentHeader {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.CollapsibleItem {
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 1em;
+  border: 0px;
+}
+.CollapsibleItem > div {
+  border-radius: 1em;
+  border-bottom: 0;
+}
+.LoadingContent {
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.Title {
+  margin: 20px 15px;
+  color: var(--color-navbar);
+}
+.btnShowMore {
+  width: 95% !important;
+  margin-bottom: 20px;
+}
+.FeedTabsContainer {
+  box-shadow: none;
+}
+.FeedTabsContainer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.FeedTabsContainer li {
+  float: left;
+  display: block;
+  color: var(--color-navbar);
+  text-align: center;
+  padding: 8px;
+  margin-right: 15px;
+  text-decoration: none;
+}
+.FeedTabsContainer div {
+  display: flex;
+}
+.FeedTabsContainer div h5 {
+  margin: 0 5px;
+}
+.FeedTabsContainer div:hover {
+  cursor: pointer;
+}
+.FeedTabsContainer div:hover h5 {
+  text-decoration: underline;
+}
+.collapsible-content {
+  padding: 15px;
+  font-size: 12px;
+}
+.FeedIcon {
+  font-size: 12px;
+  text-align: left;
+  margin-top: -10;
+}
+//Icons will appear inside this container
+.CollapsibleIconContainer {
+  width: auto;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* Small devices (max 576px) */
+@media (max-width: 576px) {
+  .Content p {
+    font-size: 12px;
+  }
+  .Content h4 {
+    font-size: 14px;
+    margin: 0;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .Content p {
+    font-size: 12px;
+  }
+  .Content h4 {
+    font-size: 16px;
+    margin: 0;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .Content p {
+    font-size: 16px;
+  }
+  .Content h4 {
+    font-size: 18px;
+    margin: 0;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .Content p {
+    font-size: 18px;
+  }
+  .Content h4 {
+    font-size: 20px;
+    margin: 0;
+  }
+  .ShowAllButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .Content p {
+    font-size: 18px;
+  }
+  .Content h4 {
+    font-size: 22px;
+  }
+}

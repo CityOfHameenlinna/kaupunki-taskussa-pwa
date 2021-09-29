@@ -1,0 +1,76 @@
+
+:root {
+  // This file is for setting colours of this app.
+  // Place your header image urls to App.module.scss.
+  // For every page that has an image in header, there is element in App.module.scss
+  // with classname => .AppHeaderImgFrontPage, .AppHeaderImgLibrary etc...
+  //
+  // Images are all stored in folder called img.
+  // It's located in /src/img
+
+  // Header Title settings
+  --color-font-header-title: #f8f9fa;
+  --color-background-header-title: rgba(10, 46, 89, 1);
+
+  // Header image settings
+  --color-header-img-transparent-layer: rgba(30, 50, 80, 0.6);
+  --color-header-img-title: #f77952;
+  --color-header-img-span: #fafafa;
+  --color-header-img-container-overlay: rgba(30, 50, 80, 0.6);
+
+  // Navbar settings
+  --color-navbar: rgba(10, 46, 89, 1);
+  //--color-navbar: black; // test
+  --color-sidenav-background: rgba(10, 46, 89, 1);
+  //--color-sidenav-background: black; //test
+  --color-navbar-icons: #fff;
+  --color-navbar-text: #f77952;
+
+  // Event colours
+  --color-event-title: #f77952;
+  --color-event-search-checkbox: #f77952; // Events page has a searchbar. There are checkboxes for "search by keyword"
+
+  // News colours
+  --color-news-item-title: #f77952;
+
+  // Error colours
+  --color-warning-icon: #f77952;
+
+  // Button colours
+  --color-button-primary-background: #f77952;
+  --color-button-primary-text: #fff;
+  --color-button-primary-text-shadow: #db704f;
+  --color-button-primary-hover: #ba5a3d;
+  --color-button-primary-focus: #ba5a3d;
+
+  // Activity links and buttons colours
+  --color-button-primary-color: #f77952;
+  --color-button-link-color: #000000;
+
+  // ios status bar background color
+  --color-ios-statusbar-background: rgba(10, 46, 89, 1);
+
+  --color-blue: #007bff;
+  --color-indigo: #6610f2;
+  --color-purple: #6f42c1;
+  --color-pink: #e83e8c;
+  --color-red: #dc3545;
+  --color-orange: #fd7e14;
+  --color-yellow: #ffc107;
+  --color-green: #28a745;
+  --color-teal: #20c997;
+  --color-cyan: #17a2b8;
+  --color-white: #fff;
+  --color-gray: #6c757d;
+  --color-gray-dark: #343a40;
+  --color-primary: #0a2e59;
+  --color-secondary: #6c757d;
+  --color-success: #28a745;
+  --color-info: #17a2b8;
+  --color-warning: #ffc107;
+  --color-danger: #dc3545;
+  --color-light: #f8f9fa;
+  --color-dark: #343a40;
+
+}
+ 

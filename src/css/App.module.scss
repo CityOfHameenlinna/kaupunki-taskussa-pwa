@@ -1,0 +1,369 @@
+// this file contains contains all of the commonly used components css such as properties that are assigned for tags (h1, h2 etc..) and content section.
+// this file also contains all css of headers of different pages and header image urls
+// component specific css is located at their dedicated files (<componentname>.module.scss)
+
+@import "../theme/variables.scss";
+
+// Default font-face
+@font-face {
+  font-family: "Futura";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../fonts/Futura-Medium.woff2") format("woff2"),
+    url("../fonts/Futura-Medium.woff") format("woff"),
+    url("../fonts/Futura.ttc") format("ttc");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Bold font-face
+@font-face {
+  font-family: "Futura-Bold";
+  font-style: bold;
+  font-weight: 800;
+  src: url("../fonts/Futura-Bold.woff2") format("woff2"),
+    url("../fonts/Futura-Bold.woff") format("woff"),
+    url("../fonts/Futura-Bold.ttf") format("ttf");
+}
+
+// For ios status bar background color
+@supports (-webkit-overflow-scrolling: touch) {
+  body {
+    background-color: var(--color-ios-statusbar-background) !important;
+  }
+}
+// For other than ios devices
+@supports not (-webkit-overflow-scrolling: touch) {
+  body {
+    background-color: var(--color-navbar) !important;
+  }
+}
+
+body {
+  font-family: "Futura", sans-serif;
+}
+
+h1 {
+  font-size: 28px;
+  font-family: "Futura-Bold", sans-serif;
+}
+
+h2 {
+  font-size: 26px;
+  padding: 10px 0 10px 0;
+  margin: 0;
+  font-family: "Futura-Bold", sans-serif;
+}
+
+h3 {
+  font-size: 22px;
+  padding: 10px 0 10px 0;
+  margin: 0;
+  font-family: "Futura-Bold", sans-serif;
+}
+
+.AppContainer {
+  background-color: var(--color-light);
+  font-style: normal;
+  font-weight: 500;
+  height: auto;
+  margin: 0;
+  min-height: 101vh;
+  width: auto;
+  overflow: auto;
+  min-width: -webkit-fill-available;
+  
+}
+.AppContent {
+  padding: 10px;
+  width: auto;
+}
+ul {
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+}
+
+.AppHeader {
+  font-style: normal;
+  font-weight: 500;
+  overflow: auto;
+}
+
+.AppPlaceholderImage {
+  background-image: url(../img/hameenlinna-logo.png);
+  height: 28px;
+  width: 28px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 15px;
+  background: black;
+  overflow: hidden;
+}
+.AppHeaderImgContainer {
+  background: var(--color-background-header-title);
+  overflow: hidden;
+  position: relative;
+}
+
+// front page header image
+.AppHeaderImgFrontPage {
+  background-image: url(../img/Linna2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 240px;
+  position: relative;
+  text-align: center;
+  opacity: 0.9;
+}
+
+// Tietoa sovelluksesta header image
+.AppHeaderImgAbout {
+  background-image: url(../img/Linna2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 240px;
+  position: relative;
+  text-align: center;
+  opacity: 0.9;
+}
+
+// Kirjastokortti header image
+.AppHeaderImgLibraryCard {
+  background-image: url(../img/Kalvolan-kirjasto-hyvinvointikeskus-Sauvolassa-1-1920x768.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 240px;
+  position: relative;
+  text-align: center;
+  opacity: 0.5;
+}
+
+// Tapahtumat header image
+.AppHeaderImgEvents {
+  background-image: url(../img/Sibeliusfantasia_2018-1920x908.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 240px;
+  position: relative;
+  text-align: center;
+  opacity: 0.9;
+}
+
+// RSSFeed header image
+.AppHeaderImgNews {
+  background-image: url(../img/Hameenlinna_dark1080.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 240px;
+  position: relative;
+  text-align: center;
+  opacity: 0.7;
+}
+
+// header image colored transparent layer
+.Layer {
+  background-color: var(--color-header-img-transparent-layer);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// Container for header title
+.AppHeaderImgTitle {
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+}
+
+// Header title
+.AppHeaderImgTitle h1 {
+  font-family: "Futura-Bold", sans-serif;
+  padding: 0 10px;
+  width: auto;
+  font-size: 38px;
+  font-weight: 800;
+  margin: 0;
+  color: var(--color-header-img-title);
+  text-shadow: 2px 3px 6px #000000;
+}
+
+// span for header image title (not used right now)
+.AppHeaderImgTitle span {
+  padding: 0 20px;
+  width: auto;
+  font-size: 14px;
+  font-weight: 800;
+  margin: 0;
+  color: var(--color-header-img-span);
+  text-shadow: 2px 3px 6px #000000;
+}
+
+.SetupButton {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+}
+//Error view when app route not found
+.AppRouteNotFoundError {
+  padding: 25px;
+}
+.AppRouteNotFoundIconContainer {
+  margin: auto;
+  align-content: center;
+  display: flex;
+}
+.AppRouteNotFoundIconContainer p{
+ margin-left: 24px;
+ font-size: 24px;
+}
+.AppRouteNotFoundErrorIcon {
+  font-size: 50px;
+  color: var(--color-warning-icon);
+  margin-top: auto;
+  margin-bottom: auto;
+}
+//No internet popup settings
+.PopUp{
+  padding: 15px 15px 25px 15px;
+}
+.PopUp h1{
+  font-size: 15px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+.PopUp p {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+.PopUpIcon{
+  
+}
+.PopUpContent{
+
+}
+
+.PopUpWarningIcon{
+  margin: auto;
+  color: var(--color-warning-icon);
+  font-size: 40px !important;
+  display: flex;
+  justify-content: center;
+}
+
+.PopUpButton {
+  background-color: var(--color-button-primary-background);
+  border-radius: 28px;
+  border-color: none;
+  border-width: 0;
+  display: flex;
+  width: auto;
+  cursor: pointer;
+  color: #f8f9fa;
+  font-family: "Futura", sans-serif;
+  font-size: 17px;
+  padding: 16px 31px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px var(--color-button-primary-text-shadow);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.PopUpButton a {
+  color: var(--color-button-primary-text);
+}
+
+.PopUpButton:hover {
+  background-color: var(--color-button-primary-hover);
+}
+
+.PopUpButton:active {
+  position: relative;
+  top: 1px;
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.PopUpButton:focus {
+  background-color: var(--color-button-primary-focus);
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .SetupButton {
+    width: 60%;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .SetupButton {
+    width: 70%;
+  }
+}
+
+/* Large devices (desktops, 993px and up) */
+@media (min-width: 993px) {
+  .AppContainer {
+    margin-left: 300px;
+  }
+  .AppHeaderImgContainer {
+    height: 370px !important;
+  }
+  .AppHeaderImgNews,
+  .AppHeaderImgFrontPage,
+  .AppHeaderImgEvents,
+  .AppHeaderImgLibraryCard,
+  .AppHeaderImgAbout {
+    height: 100%;
+  }
+  .AppHeaderImgTitle h1 {
+    margin-left: 330px;
+  }
+  .SetupButton {
+    width: 45%;
+  }
+  .SubContent,
+  h1,
+  h2,
+  h3,
+  p {
+    display: block;
+    margin-left: 30px;
+    margin-right: auto;
+    width: 90%;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .AppHeaderImgContainer {
+    height: 480px !important;
+  }
+  .AppHeaderImgNews,
+  .AppHeaderImgFrontPage,
+  .AppHeaderImgEvents,
+  .AppHeaderImgLibraryCard,
+  .AppHeaderImgAbout {
+    height: 100%;
+  }
+}
+
+.CookieButton button:hover, button:focus {
+  background-color: #f77952!important;
+}
